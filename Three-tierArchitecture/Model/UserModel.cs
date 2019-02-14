@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Class1
+    public class User
     {
-             
+        public User() { }
+        public int ID { get; set; }
+        public string Name { get; set; }
     }
 }
