@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DAL;
 using Model;
-using DAL;
 namespace BLL
 {
     public class UserBLL
     {
         UserDB db = new UserDB();
-        public bool addUser(User user)
+        /// <summary>
+        /// 添加用户
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        public bool IsAddUser(User user)
         {
             return db.User_add(user);
         }
